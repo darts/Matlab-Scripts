@@ -11,7 +11,7 @@ hold on;
     y2 = y2 * (8 / (pi.^2));
     plot(x, y2, 'b');
 %}
-
+ 
 for i = 1:1:6
     subplot(3, 2, [i]);
     %Times to repeat

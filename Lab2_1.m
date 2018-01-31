@@ -1,5 +1,5 @@
 clear all;
-
+ 
 for i = 1:1:6
     subplot(3, 2, [i]);
     %Times to repeat

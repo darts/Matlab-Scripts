@@ -1,6 +1,6 @@
 clear all;
 hold on;
-
+ 
 x = (-2*pi):0.1:2*pi
 y = cos(x)
 plot(x,y, 'Color', [0 0 0])
