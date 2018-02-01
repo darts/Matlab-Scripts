@@ -1,9 +1,10 @@
 clear all;
- 
+ close all;
 for i = 1:1:6
     subplot(3, 2, [i]);
     %Times to repeat
     timesSine = 1;
+    %Because odd sine only
     switch i
         case 2
             timesSine = 5;
@@ -12,9 +13,9 @@ for i = 1:1:6
         case 4
             timesSine = 19;
         case 5
-            timesSine = 99;
+            timesSine = 50;
         case 6
-            timesSine = 500;
+            timesSine = 999;
     end
     %Printing title
     numPrint = (timesSine + 1) / 2;
