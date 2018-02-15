@@ -1,4 +1,3 @@
-
 fs = 100; %Sample freq
 frequency = 10; %frequency of sine wave
 time = 1; % how many seconds to consider
@@ -8,6 +7,7 @@ N=32;
 for i =[1,2,3]
     subplot(3,1,[i]);
     N=N+N;  
-    F=abs(fft(y,N)); 
-    plot(F);
+    F = fftshift(abs(fft(y,N)));
+    newX = -fs/2:fs/N:fs/2-fs/N;
+    plot(newX, F)
 end
